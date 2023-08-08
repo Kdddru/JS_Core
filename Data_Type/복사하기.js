@@ -3,6 +3,7 @@ var user ={
     gender : 'male'
 }
 
+//얕은 복사
 var copyObject = function(target){
     var result = {};
     for(var prop in target){
@@ -13,5 +14,10 @@ var copyObject = function(target){
 
 
 console.log(copyObject(user));
+
+var user2 = copyObject(user);
+user2.name = 'Duru'
+
+console.log(user2);
 
 
