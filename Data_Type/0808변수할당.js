@@ -1,6 +1,11 @@
 var user1 = {
     name : 'dudu',
-    gender : 'male'
+    gender : 'male',
+    urls:{
+        portfolio : 'http://github.com/abc',
+        blog : 'http://blog.com',
+        facebook: 'http://facebook.com/abc'
+    }
 };
 
 // var changeName= function(user, newName){
@@ -20,6 +25,11 @@ var changeName = function(user, newName){
 
 
 var user2 =changeName(user1, 'duhyun');
+console.log(user2);
+
+user2.urls.portfolio = '';
+console.log(user1.urls.portfolio === user2.urls.portfolio);  //true가 나옴
+
 
 
 if(user1 !== user2){
