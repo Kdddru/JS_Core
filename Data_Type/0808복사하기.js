@@ -1,4 +1,4 @@
-var user ={
+const user ={
     name : 'Dudu',
     gender : 'male',
     urls:{
@@ -9,7 +9,7 @@ var user ={
 }
 
 //얕은 복사
-var copyObject = function(target){
+const copyObject = function(target){
     var result = {};
     for(var prop in target){
         result[prop] = target[prop]
@@ -17,7 +17,7 @@ var copyObject = function(target){
     return result;
 };
 
-var user2 = copyObject(user);
+const user2 = copyObject(user);
 
 //깊은 복사 ( 객체안의 객체 복사)
 //urls도 복사해야지 기존데이터 불변

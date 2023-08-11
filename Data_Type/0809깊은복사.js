@@ -1,4 +1,4 @@
-var obj = {
+const obj = {
     a:1,
     b:{
         c:null,
@@ -6,8 +6,8 @@ var obj = {
     }
 };
 
-var copyObjDeep = function(target){
-    var result ={};
+const copyObjDeep = function(target){
+    const result ={};
 
     if(typeof target === 'object' && target !== null){
         for(var prop in target){
@@ -23,7 +23,7 @@ var copyObjDeep = function(target){
 };
 
 
-var obj2 = copyObjDeep(obj);
+const obj2 = copyObjDeep(obj);
 obj2.b.c = 1;
 console.log(obj2);
 console.log(obj.b.d == obj2.b.d);

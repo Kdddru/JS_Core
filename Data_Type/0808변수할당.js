@@ -1,4 +1,4 @@
-var user1 = {
+const user1 = {
     name : 'dudu',
     gender : 'male',
     urls:{
@@ -16,7 +16,7 @@ var user1 = {
 
 
 // 복사하기
-var changeName = function(user, newName){
+const changeName = function(user, newName){
     var newUser = {...user1} ;
     newUser.name = newName;
     newUser.gender = user.gender;
@@ -24,7 +24,7 @@ var changeName = function(user, newName){
 };
 
 
-var user2 =changeName(user1, 'duhyun');
+const user2 =changeName(user1, 'duhyun');
 console.log(user2);
 
 user2.urls.portfolio = '';
